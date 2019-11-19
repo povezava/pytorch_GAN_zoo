@@ -25,7 +25,7 @@ return model
 def generate(model, inputs):
 # Generate ♾ infinite ♾ images
    z = inputs['z']
-   latents = z.reshape((1, 559))
+   latents = z.reshape((1, 512))
    latents = torch.from_numpy(latents)
    with torch.no_grad():
 
